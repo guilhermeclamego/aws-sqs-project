@@ -20,7 +20,7 @@ const QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/195403013613/alura-test-d
                 QueueUrl: QUEUE_URL,
                 ReceiptHandle: message.ReceiptHandle
             }).promise();
-            console.log('mensagem da DLQ processada (e excluída) com sucesso');
+            console.log('mensagem da DLQ processada e excluída com sucesso');
         })
     }
 })();
